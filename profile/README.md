@@ -1,7 +1,8 @@
+<p align="center"><img src="kluvs-banner.png"/></p>
+
 # Kluvs
 
-**Kluvs** is a multi-server Discord book club platform — manage reading sessions, track members, schedule
-discussions, and engage with AI-powered features across any number of Discord communities.
+**Kluvs** is a multi-server Discord book club platform: manage reading sessions, track members, schedule discussions, and engage with AI-powered features through its proprietary Discord bot.
 
 - Website: [kluvs.com](https://kluvs.com)
 - API Reference: [docs.kluvs.com](https://docs.kluvs.com)
@@ -42,7 +43,7 @@ Mobile ──────► kluvs-mobile
 
 ## Highlights
 
-- **Multi-server** — one deployment serves unlimited Discord guilds with full data isolation
 - **Cross-platform** — web dashboard, native Android & iOS app, and a Discord bot
+- **Multi-server** — one deployment serves unlimited Discord guilds with full data isolation
 - **AI-powered** — Quill answers questions Socratically using a ReAct RAG loop grounded in the book being read
 - **Open API** — full OpenAPI 3.0 spec with interactive docs at [docs.kluvs.com](https://docs.kluvs.com)

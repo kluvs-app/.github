@@ -1,0 +1,48 @@
+# Kluvs
+
+**Kluvs** is a multi-server Discord book club platform — manage reading sessions, track members, schedule
+discussions, and engage with AI-powered features across any number of Discord communities.
+
+- Website: [kluvs.com](https://kluvs.com)
+- API Reference: [docs.kluvs.com](https://docs.kluvs.com)
+
+---
+
+## Repositories
+
+| Repo | Description | Stack |
+|------|-------------|-------|
+| [kluvs-mobile](https://github.com/ivangarzab/kluvs-mobile) | Native Android & iOS app | Kotlin Multiplatform, Compose |
+| [kluvs-frontend](https://github.com/ivangarzab/kluvs-frontend) | Web dashboard | React 19, TypeScript, Vite, Tailwind |
+| [kluvs-bot](https://github.com/ivangarzab/kluvs-bot) | Discord bot (Quill) | Python, discord.py |
+| [kluvs-backend](https://github.com/ivangarzab/kluvs-backend) | REST API | Deno, Supabase Edge Functions |
+| [kluvs-api](https://github.com/kluvs-app/kluvs-api) | Public API contract | OpenAPI 3.0 |
+| [kluvs-brain](https://github.com/ivangarzab/kluvs-brain) | AI tutoring engine | Python, RAG, OpenAI GPT-4o |
+
+---
+
+## Architecture
+
+```
+Discord ──► kluvs-bot (Quill)
+                │
+Web ────────► kluvs-frontend
+                │
+Mobile ──────► kluvs-mobile
+                │
+                ▼
+          kluvs-backend  (Supabase Edge Functions)
+                │
+          PostgreSQL (Supabase)
+                │
+          kluvs-brain  (Agentic RAG — Socratic AI)
+```
+
+---
+
+## Highlights
+
+- **Multi-server** — one deployment serves unlimited Discord guilds with full data isolation
+- **Cross-platform** — web dashboard, native Android & iOS app, and a Discord bot
+- **AI-powered** — Quill answers questions Socratically using a ReAct RAG loop grounded in the book being read
+- **Open API** — full OpenAPI 3.0 spec with interactive docs at [docs.kluvs.com](https://docs.kluvs.com)

@@ -13,30 +13,30 @@
 
 | Repo | Description | Stack |
 |------|-------------|-------|
-| [kluvs-mobile](https://github.com/ivangarzab/kluvs-mobile) | Native Android & iOS app | Kotlin Multiplatform, Compose |
-| [kluvs-frontend](https://github.com/ivangarzab/kluvs-frontend) | Web dashboard | React 19, TypeScript, Vite, Tailwind |
-| [kluvs-bot](https://github.com/ivangarzab/kluvs-bot) | Discord bot (Quill) | Python, discord.py |
-| [kluvs-backend](https://github.com/ivangarzab/kluvs-backend) | REST API | Deno, Supabase Edge Functions |
+| [kluvs-mobile](https://github.com/kluvs-app/kluvs-mobile) | Native Android & iOS app | Kotlin Multiplatform, Compose |
+| [kluvs-frontend](https://github.com/kluvs-app/kluvs-frontend) | Web dashboard | React 19, TypeScript, Vite, Tailwind |
+| [kluvs-bot](https://github.com/kluvs-app/kluvs-bot) | Discord bot | Python, discord.py |
+| [kluvs-backend](https://github.com/kluvs-app/kluvs-backend) | REST API | Deno, Supabase Edge Functions |
 | [kluvs-api](https://github.com/kluvs-app/kluvs-api) | Public API contract | OpenAPI 3.0 |
-| [kluvs-brain](https://github.com/ivangarzab/kluvs-brain) | AI tutoring engine | Python, RAG, OpenAI GPT-4o |
+| [kluvs-brain](https://github.com/kluvs-app/kluvs-brain) | AI tutoring engine | Python, RAG, LLMs |
 
 ---
 
 ## Architecture
 
 ```
-Discord ──► kluvs-bot (Quill)
-                │
+Discord ────► kluvs-bot
+                  │
 Web ────────► kluvs-frontend
-                │
-Mobile ──────► kluvs-mobile
-                │
-                ▼
-          kluvs-backend  (Supabase Edge Functions)
-                │
-          PostgreSQL (Supabase)
-                │
-          kluvs-brain  (Agentic RAG — Socratic AI)
+                  │
+Mobile ─────► kluvs-mobile
+                  │
+                  ▼
+              kluvs-backend  (Supabase Edge Functions)
+                  │
+              PostgreSQL (Supabase)
+                  │
+              kluvs-brain  (Agentic RAG — Socratic AI)
 ```
 
 ---

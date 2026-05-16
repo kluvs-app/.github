@@ -6,6 +6,7 @@
 
 - Website: [kluvs.com](https://kluvs.com)
 - API Reference: [docs.kluvs.com](https://docs.kluvs.com)
+- Design System: [design.kluvs.com](https://design.kluvs.com)
 
 ---
 
@@ -19,6 +20,8 @@
 | [kluvs-backend](https://github.com/kluvs-app/kluvs-backend) | REST API | Deno, Supabase Edge Functions |
 | [kluvs-api](https://github.com/kluvs-app/kluvs-api) | Public API contract | OpenAPI 3.0 |
 | [kluvs-brain](https://github.com/kluvs-app/kluvs-brain) | AI tutoring engine | Python, RAG, LLMs |
+| [design-system](https://github.com/kluvs-app/design-system) | Design System | Platform-agnostic Tokens, HTML preview |
+| [ai-tooling](https://github.com/kluvs-app/ai-tooling) | AI tools & skills | Markdown, Claude |
 
 ---
 
